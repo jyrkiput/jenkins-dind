@@ -15,6 +15,7 @@ services:
     privileged: true
   jenkins-slave:
     build: jenkins-slave
+    dns_search: [""]
     environment:
       - DOCKER_HOST=tcp://docker
     volumes:
